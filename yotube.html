@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube </title>
+    
     <meta name="msapplication-square150x150logo" content=".../icons8-youtube logo-plasticine-150.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assests/icons8-youtube-96.png " sizes="64*64">
 
     <style>
         body {
@@ -48,7 +50,7 @@ button {
     font-size: 16px; /* Button text size */
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #FF0000; /* YouTube red */
+    background-color: #faf9f9; /* YouTube red */
     color: white;
 }
 
@@ -74,7 +76,7 @@ button {
 <body class="bg-white text-black h-full">
 
     <!-- Header -->
-    <header class="flex items-center justify-between bg-white px-4 py-2 shadow-md fixed top-0 left-0 right-0 z-10">
+    <header class="flex items-center justify-between bg-white px-4 py-2  fixed top-0 left-0 right-0 z-10">
         <div class="flex items-center space-x-4">
             <button onclick="toggleSidebar()" class="p-2  hover:bg-gray-200 rounded-full md:hidden">
                 <img src="https://img.icons8.com/windows/32/menu--v1.png" alt="Menu">
@@ -104,7 +106,7 @@ button {
         </div>
             <img width="24" height="24" src="https://img.icons8.com/ios/50/appointment-reminders--v1.png" alt="bell"/>
           
-            <img src="VHAK-gU9gi0-HD.jpg" alt="Profile" class="h-8 w-8 rounded-full">
+            <img src="assests/VHAK-gU9gi0-HD.jpg" alt="Profile" class="h-8 w-8 rounded-full">
         </div>
     </header>
 
@@ -113,10 +115,10 @@ button {
     <!-- Sidebar & Content -->
     <div class="flex mt-14 h-full">
         <!-- Sidebar -->
-        <aside id="sidebar" class="w-60 bg-white p-4 shadow-md fixed h-screen transition-transform transform -translate-x-full md:translate-x-0 z-50">
+        <aside id="sidebar" class="w-60 bg-white p-4  fixed h-screen transition-transform transform -translate-x-full md:translate-x-0 z-50">
 
             <nav class="space-y-2">
-                <div class="scroll-container h-screen overflow-auto " style="width: 230px; overflow-y: auto;">
+                <div class="scroll-container h-screen overflow-scroll  " style="width: 230px; overflow-y: auto;">
                 <a href="#" class="flex font-family: 'Roboto', sans-serif; items-center space-x-4 p-2 hover:bg-gray-200 rounded-md">
                     <img width="25" height="25" src="https://img.icons8.com/material-rounded/50/home.png" alt="home"/>
                     <span>Home</span>
@@ -160,32 +162,32 @@ button {
                 <h3 class="pt-2">Subscriptions</h3>
                 <br>
                 <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-200 rounded-md ">
-                    <img src="c3.jpg" 
+                    <img src="assests/c3.jpg" 
                              alt="Channel" class="h-10 w-10 rounded-full border border-gray-300">
                     <span>Madan Gowri</span>
                 </a>
                 <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-200 rounded-md ">
-                    <img src="c1.jpg" 
+                    <img src="assests/c1.jpg" 
                              alt="Channel" class="h-10 w-10 rounded-full border border-gray-300">
                     <span>News 7</span>
                 </a>
                 <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-200 rounded-md ">
-                    <img src="c5.jpg" 
+                    <img src="assests/c5.jpg" 
                              alt="Channel" class="h-10 w-10 rounded-full border border-gray-300">
                     <span>movie multiverse</span>
                 </a>
                 <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-200 rounded-md ">
-                    <img src="c6.jpg" 
+                    <img src="assests/c6.jpg" 
                              alt="Channel" class="h-10 w-10 rounded-full border border-gray-300">
                     <span>Hungama</span>
                 </a>
                 <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-200 rounded-md ">
-                    <img src="c7.jpg" 
+                    <img src="assests/c7.jpg" 
                              alt="Channel" class="h-10 w-10 rounded-full border border-gray-300">
                     <span>Sidd ahmed</span>
                 </a>
                 <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-200 rounded-md ">
-                    <img src="c8.jpg" 
+                    <img src="assests/c8.jpg" 
                              alt="Channel" class="h-10 w-10 rounded-full border border-gray-300">
                     <span>Zig und Sharko</span>
                 </a>
@@ -228,7 +230,7 @@ button {
 
         <!-- Main Content -->
         <main class="flex-1 md:ml-64 p-4 mb-8 pb-4">
-            <div class="flex justify-around mb-4 overflow-x-auto space-x-2 mb-4 hidden  md:block md:mb-2  lg:block mb-2">
+            <div class="flex justify-around mb-4 overflow-x-scroll space-x-2 mb-4 hidden  md:block md:mb-2  lg:block mb-2 max-w-10xl ">
                 <button class="px-4 py-2 bg-white-700 text-white rounded-md">All</button>
                 <button class="px-4 py-2 bg-gray-200 text-black rounded-md hover:bg-gray-700 sm:mb-4 ">All</button>
                 <button class="px-4 py-2 bg-gray-200 text-black rounded-md hover:bg-gray-700 sm:mb-4">Music</button>
@@ -252,14 +254,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="EgqVrxPSNgs-HD.jpg"
+                               width="100%" height="auto" poster="assests/EgqVrxPSNgs-HD.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
-                            <source src="https://www.youtube.com/watch?v=J6yoH3I0aQw" type="video/mp4">
+                            <source src="assests/The Fantastic Four First Steps  Official Tamil Teaser  Only in Cinemas July 25.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p1.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p1.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                     
                         <div class="ml-2">
                             <h3>Black Panther</h3>
@@ -274,14 +276,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="VHAK-gU9gi0-HD.jpg"
+                               width="100%" height="auto" poster="assests/VHAK-gU9gi0-HD.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
-                            <source src="video2.mp4" type="video/mp4">
+                            <source src="assests/The Fantastic Four First Steps  Official Tamil Teaser  Only in Cinemas July 25.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p2.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p2.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">Deadpool</h3>
                             <p class="text-sm text-gray-400">Marvel</p>
@@ -294,14 +296,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="NtNYwMSpIBg-HD.jpg"
+                               width="100%" height="auto" poster="assests/NtNYwMSpIBg-HD.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
-                            <source src="video2.mp4" type="video/mp4">
+                            <source src="video.mp4" type="video/mp4">
                            
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p3.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p3.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">Spiderman-2099</h3>
                             <p class="text-sm text-gray-400">Sony</p>
@@ -314,14 +316,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="p1.jpg"
+                               width="100%" height="auto" poster="assests/p1.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
                             <source src="video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p4.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p4.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">Fire man</h3>
                             <p class="text-sm text-gray-400">Fantastic four</p>
@@ -333,14 +335,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="p3.jpg"
+                               width="100%" height="auto" poster="assests/p3.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
                             <source src="video2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p5.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p5.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">Master</h3>
                             <p class="text-sm text-gray-400">Sony Music</p>
@@ -352,7 +354,7 @@ button {
                     <div class="relative">
                         <!-- Video Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-75 transition-opacity duration-300 aspect-video"
-                               poster="a1.jpg"
+                               poster="assests/a1.jpg"
                                onmouseover="playVideo(this)" 
                                onmouseout="pauseVideo(this)">
                             <source src="The Fantastic Four First Steps  Official Tamil Teaser  Only in Cinemas July 25.mp4" type="video/mp4">
@@ -363,7 +365,7 @@ button {
                     <!-- Video Info -->
                     <div class="flex mt-3">
                         <!-- Channel Icon -->
-                        <img src="p6.jpg" 
+                        <img src="assests/p6.jpg" 
                              alt="Channel" class="h-10 w-10 rounded-full border border-gray-300">
                              
                         <div class="ml-3">
@@ -377,14 +379,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="p4.jpg"
+                               width="100%" height="auto" poster="assests/p4.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
                             <source src="video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p7.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p7.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">Megamind</h3>
                             <p class="text-sm text-gray-400">Cartoon Network</p>
@@ -396,14 +398,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="p5.jpg"
+                               width="100%" height="auto" poster="assests/p5.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
                             <source src="video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p8.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p8.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">Kung Fu Panda</h3>
                             <p class="text-sm text-gray-400">Fight with Ku fu</p>
@@ -415,14 +417,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="p6.jpg"
+                               width="100%" height="auto" poster="assests/p6.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
                             <source src="video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p9.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p9.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">Angry Bird</h3>
                             <p class="text-sm text-gray-400">Piggy bird</p>
@@ -434,14 +436,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="p7.jpg"
+                               width="100%" height="auto" poster="assests/p7.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
                             <source src="video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p10.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p10.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">Madacascar</h3>
                             <p class="text-sm text-gray-400">hakuna matata</p>
@@ -453,14 +455,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="p8.jpg"
+                               width="100%" height="auto" poster="assests/p8.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
                             <source src="video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p1.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p1.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">Bye Bye Bye</h3>
                             <p class="text-sm text-gray-400">NSYC songs</p>
@@ -472,14 +474,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="p9.jpg"
+                               width="100%" height="auto" poster="assests/p9.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
                             <source src="video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p2.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p2.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">Greatest Of All Time</h3>
                             <p class="text-sm text-gray-400">GOAT</p>
@@ -491,14 +493,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="p10.jpg"
+                               width="100%" height="auto" poster="assests/p10.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
                             <source src="video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p4.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p4.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">DANDADAN</h3>
                             <p class="text-sm text-gray-400">Thug Life Anime</p>
@@ -510,14 +512,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="a2.jpg"
+                               width="100%" height="auto" poster="assests/a2.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
                             <source src="video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p6.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p6.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">Godzila</h3>
                             <p class="text-sm text-gray-400">Warner Bros</p>
@@ -529,14 +531,14 @@ button {
                     <div class="relative">
                         <!-- Thumbnail -->
                         <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-                               width="100%" height="auto" poster="a3.jpg"
+                               width="100%" height="auto" poster="assests/a3.jpg"
                                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
                             <source src="video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="flex mt-2">
-                        <img src="p5.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                        <img src="assests/p5.jpg" alt="Channel" class="h-10 w-10 rounded-full">
                         <div class="ml-2">
                             <h3 class="font-bold">APT</h3>
                             <p class="text-sm text-gray-400">Rosy</p>
@@ -544,6 +546,27 @@ button {
                         </div>
                     </div>
                 </div>
+                <div class="bg-white p-2 rounded-lg ">
+                    <div class="relative">
+                        <!-- Thumbnail -->
+                        <video class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
+                               width="100%" height="auto" poster="assests/EgqVrxPSNgs-HD.jpg"
+                               onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <source src="https://www.youtube.com/watch?v=J6yoH3I0aQw" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="flex mt-2">
+                        <img src="assests/p1.jpg" alt="Channel" class="h-10 w-10 rounded-full">
+                    
+                        <div class="ml-2">
+                            <h3>Black Panther</h3>
+                            <p class="text-sm text-gray-400">CodeShip</p>
+                            <p class="text-sm text-gray-400">1M views • 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="bg-white p-2 rounded-lg ">
                     <div class="relative">
                      
